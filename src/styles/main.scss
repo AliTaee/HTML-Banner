@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+$banner-width: 300px;
+$banner-height: 250px;
+$banner-main-background: #212121;
+
+.bnr {
+  width: $banner-width;
+  height: $banner-height;
+  background: $banner-main-background;
+  position: relative;
+  overflow: hidden;
+
+  &__el {
+    position: absolute;
+  }
+
+  &__el-0 {
+    top: 0;
+    right: 20px;
+  }
+
+  &__el-1 {
+    top: 0;
+    right: 0;
+  }
+
+  &__el-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__watch {
+    background-image: url("../assets/images/watch.png");
+    width: 190px;
+    height: 250px;
+  }
+
+  &__band {
+    background-image: url("../assets/images/band.png");
+    width: 150px;
+    height: 250px;
+  }
+}
