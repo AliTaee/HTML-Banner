@@ -23,6 +23,10 @@ $bnr-red: #cd1925;
 $bnr-btn-bg: #0071e3;
 $bnr-main-bg: #212121;
 
+.el__ps-ab {
+  position: absolute;
+}
+
 .bnr {
   width: $bnr-width;
   height: $bnr-height;
@@ -30,26 +34,26 @@ $bnr-main-bg: #212121;
   position: relative;
   overflow: hidden;
 
-  &__el {
-    position: absolute;
-  }
-
   &__el-0 {
+    @extend .el__ps-ab;
     top: 0;
     right: 20px;
   }
 
   &__el-1 {
+    @extend .el__ps-ab;
     top: 0;
     right: 0;
   }
 
   &__el-2 {
+    @extend .el__ps-ab;
     bottom: 15px;
     left: 15px;
   }
 
   &__el-3 {
+    @extend .el__ps-ab;
     top: 30px;
     left: 15px;
   }
