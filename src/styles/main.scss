@@ -16,14 +16,17 @@ body {
   justify-content: center;
 }
 
-$banner-width: 300px;
-$banner-height: 250px;
-$banner-main-background: #212121;
+$bnr-width: 300px;
+$bnr-height: 250px;
+$bnr-white: #fff;
+$bnr-red: #cd1925;
+$bnr-btn-bg: #0071e3;
+$bnr-main-bg: #212121;
 
 .bnr {
-  width: $banner-width;
-  height: $banner-height;
-  background: $banner-main-background;
+  width: $bnr-width;
+  height: $bnr-height;
+  background: $bnr-main-bg;
   position: relative;
   overflow: hidden;
 
@@ -39,6 +42,16 @@ $banner-main-background: #212121;
   &__el-1 {
     top: 0;
     right: 0;
+  }
+
+  &__el-2 {
+    bottom: 15px;
+    left: 15px;
+  }
+
+  &__el-3 {
+    top: 30px;
+    left: 15px;
   }
 
   &__el-bg {
@@ -57,5 +70,31 @@ $banner-main-background: #212121;
     background-image: url("../assets/images/band.png");
     width: 150px;
     height: 250px;
+  }
+
+  &__btn {
+    background-color: $bnr-btn-bg;
+    color: $bnr-white;
+    text-transform: capitalize;
+    display: inline-block;
+    border-radius: 18px;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-decoration: none;
+    letter-spacing: -0.022em;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 21px;
+    color: $bnr-white;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.17648;
+
+    &-red {
+      color: $bnr-red;
+    }
   }
 }
