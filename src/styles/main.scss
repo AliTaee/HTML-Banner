@@ -92,6 +92,7 @@ $bnr-main-bg: #212121;
     display: inline-block;
     text-align: center;
     line-height: 1.17648;
+    text-transform: capitalize;
 
     &-red {
       color: $bnr-red;

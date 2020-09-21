@@ -18,7 +18,7 @@ function Banner() {
         </div>
         <div className="bnr__el bnr__el-3">
           <span className="bnr__title">
-            Apple Watch <span className="bnr__title-red">Series 6</span>
+            apple watch <span className="bnr__title-red">series 6</span>
           </span>
         </div>
       </div>
