@@ -22,6 +22,7 @@ $bnr-white: #fff;
 $bnr-red: #cd1925;
 $bnr-btn-bg: #0071e3;
 $bnr-main-bg: #212121;
+$bnr-animation-speed: 2s;
 
 .el__ps-ab {
   position: absolute;
@@ -68,6 +69,9 @@ $bnr-main-bg: #212121;
     background-image: url("../assets/images/watch.png");
     width: 190px;
     height: 250px;
+    animation-name: bnr-watch;
+    animation-duration: $bnr-animation-speed;
+    animation-timing-function: linear;
   }
 
   &__band {
@@ -87,6 +91,10 @@ $bnr-main-bg: #212121;
     text-decoration: none;
     letter-spacing: -0.022em;
     text-align: center;
+
+    animation-name: bnr-btn;
+    animation-duration: $bnr-animation-speed;
+    animation-timing-function: linear;
   }
 
   &__title {
@@ -98,8 +106,41 @@ $bnr-main-bg: #212121;
     line-height: 1.17648;
     text-transform: capitalize;
 
+    animation-name: bnr-title;
+    animation-duration: $bnr-animation-speed;
+    animation-timing-function: linear;
+    
+
     &-red {
       color: $bnr-red;
     }
+  }
+}
+
+// Animations
+@keyframes bnr-watch {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bnr-title {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bnr-btn {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
