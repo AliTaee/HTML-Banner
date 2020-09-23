@@ -64,6 +64,7 @@ $bnr-animation-speed: 2s;
   }
 
   &__btn {
+    outline: none;
     background-color: $bnr-btn-bg;
     color: $bnr-white;
     text-transform: capitalize;
