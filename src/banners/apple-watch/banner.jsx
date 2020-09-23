@@ -3,21 +3,21 @@ import "./banner.scss";
 
 const AppleWatchBanner = () => {
   return (
-    <div className="bnr">
-      <div className="bnr__el-0">
-        <div className="bnr__band bnr__el-bg"></div>
+    <div className="bnrw">
+      <div className="bnrw__el-0">
+        <div className="bnrw__band bnrw__el-bg"></div>
       </div>
-      <div className="bnr__el-1">
-        <div className="bnr__watch bnr__el-bg"></div>
+      <div className="bnrw__el-1">
+        <div className="bnrw__watch bnrw__el-bg"></div>
       </div>
-      <div className="bnr__el-2">
-        <a className="bnr__btn" href="https://www.apple.com/watch/">
+      <div className="bnrw__el-2">
+        <a className="bnrw__btn" href="https://www.apple.com/watch/">
           buy
         </a>
       </div>
-      <div className="bnr__el-3">
-        <span className="bnr__title">
-          apple watch <span className="bnr__title-red">series 6</span>
+      <div className="bnrw__el-3">
+        <span className="bnrw__title">
+          apple watch <span className="bnrw__title-red">series 6</span>
         </span>
       </div>
     </div>

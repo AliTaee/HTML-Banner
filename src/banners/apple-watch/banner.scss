@@ -1,20 +1,20 @@
 // Color and size
-$bnr-width: 300px;
-$bnr-height: 250px;
-$bnr-white: #fff;
-$bnr-red: #cd1925;
-$bnr-btn-bg: #0071e3;
-$bnr-main-bg: #212121;
-$bnr-animation-speed: 2s;
+$bnrw-width: 300px;
+$bnrw-height: 250px;
+$bnrw-white: #fff;
+$bnrw-red: #cd1925;
+$bnrw-btn-bg: #0071e3;
+$bnrw-main-bg: #212121;
+$bnrw-animation-speed: 2s;
 
 .el__ps-ab {
   position: absolute;
 }
 
-.bnr {
-  width: $bnr-width;
-  height: $bnr-height;
-  background: $bnr-main-bg;
+.bnrw {
+  width: $bnrw-width;
+  height: $bnrw-height;
+  background: $bnrw-main-bg;
   position: relative;
   overflow: hidden;
 
@@ -52,8 +52,8 @@ $bnr-animation-speed: 2s;
     background-image: url("../../assets/images/watch.png");
     width: 190px;
     height: 250px;
-    animation-name: bnr-watch;
-    animation-duration: $bnr-animation-speed;
+    animation-name: bnrw-watch;
+    animation-duration: $bnrw-animation-speed;
     animation-timing-function: linear;
   }
 
@@ -65,8 +65,8 @@ $bnr-animation-speed: 2s;
 
   &__btn {
     outline: none;
-    background-color: $bnr-btn-bg;
-    color: $bnr-white;
+    background-color: $bnrw-btn-bg;
+    color: $bnrw-white;
     text-transform: capitalize;
     display: inline-block;
     border-radius: 18px;
@@ -76,32 +76,32 @@ $bnr-animation-speed: 2s;
     letter-spacing: -0.022em;
     text-align: center;
 
-    animation-name: bnr-btn;
-    animation-duration: $bnr-animation-speed;
+    animation-name: bnrw-btn;
+    animation-duration: $bnrw-animation-speed;
     animation-timing-function: linear;
   }
 
   &__title {
     font-size: 21px;
-    color: $bnr-white;
+    color: $bnrw-white;
     width: 75px;
     display: inline-block;
     text-align: center;
     line-height: 1.17648;
     text-transform: capitalize;
 
-    animation-name: bnr-title;
-    animation-duration: $bnr-animation-speed;
+    animation-name: bnrw-title;
+    animation-duration: $bnrw-animation-speed;
     animation-timing-function: linear;
 
     &-red {
-      color: $bnr-red;
+      color: $bnrw-red;
     }
   }
 }
 
 // Animations
-@keyframes bnr-watch {
+@keyframes bnrw-watch {
   from {
     transform: translateX(200px);
   }
@@ -110,7 +110,7 @@ $bnr-animation-speed: 2s;
   }
 }
 
-@keyframes bnr-title {
+@keyframes bnrw-title {
   from {
     transform: translateX(-100px);
   }
@@ -119,7 +119,7 @@ $bnr-animation-speed: 2s;
   }
 }
 
-@keyframes bnr-btn {
+@keyframes bnrw-btn {
   from {
     transform: translateY(60px);
   }
