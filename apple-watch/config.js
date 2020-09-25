@@ -32,13 +32,13 @@ const config = [{
     data: "_blank",
   },
   {
-    type: "css-background-image",
+    type: "css-property",
     elId: "bnrw-band",
     property: "backgroundImage",
     data: "./images/band.png",
   },
   {
-    type: "css-background-image",
+    type: "css-property",
     elId: "bnrw-watch",
     property: "backgroundImage",
     data: "./images/watch.png",
@@ -58,7 +58,7 @@ function renderElements(element) {
     case 'dom-attr':
       document.getElementById(elId)[attr] = data;
       break;
-    case 'css-background-image':
+    case 'css-property':
       document.getElementById(elId).style[property] = `url(${data})`;
       break;
 
