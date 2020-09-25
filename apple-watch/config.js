@@ -2,28 +2,34 @@
 
 // We can defined config to easily customize HTML banner
 const config = [{
-    type: "text",
+    type: "dom-attr",
     elId: "bnrw-brand",
     attr: "innerHTML",
     data: "apple watch",
   },
   {
-    type: "text",
+    type: "dom-attr",
     elId: "bnrw-model",
     attr: "innerHTML",
     data: "series 6",
   },
   {
-    type: "text",
+    type: "dom-attr",
     elId: "bnrw-btn",
     attr: "href",
     data: "https://www.apple.com/watch/",
   },
   {
-    type: "text",
+    type: "dom-attr",
     elId: "bnrw-btn",
     attr: "innerHTML",
     data: "buy!",
+  },
+  {
+    type: "dom-attr",
+    elId: "bnrw-btn",
+    attr: "target",
+    data: "_blank",
   },
   {
     type: "css-background-image",
@@ -49,7 +55,7 @@ function renderElements(element) {
   } = element
 
   switch (type) {
-    case 'text':
+    case 'dom-attr':
       document.getElementById(elId)[attr] = data;
       break;
     case 'css-background-image':
