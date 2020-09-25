@@ -31,7 +31,6 @@
   background-size: cover;
 }
 .bnrw__watch {
-  background-image: url("../../images/watch.png");
   width: 190px;
   height: 250px;
   animation-name: bnrw-watch;
@@ -39,7 +38,6 @@
   animation-timing-function: linear;
 }
 .bnrw__band {
-  background-image: url("../../images/band.png");
   width: 150px;
   height: 250px;
 }
