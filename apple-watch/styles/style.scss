@@ -49,7 +49,7 @@ $bnrw-animation-speed: 2s;
   }
 
   &__watch {
-    background-image: url("../../assets/images/watch.png");
+    background-image: url("../../images/watch.png");
     width: 190px;
     height: 250px;
     animation-name: bnrw-watch;
@@ -58,7 +58,7 @@ $bnrw-animation-speed: 2s;
   }
 
   &__band {
-    background-image: url("../../assets/images/band.png");
+    background-image: url("../../images/band.png");
     width: 150px;
     height: 250px;
   }
@@ -105,6 +105,7 @@ $bnrw-animation-speed: 2s;
   from {
     transform: translateX(200px);
   }
+
   to {
     transform: translateX(0px);
   }
@@ -114,6 +115,7 @@ $bnrw-animation-speed: 2s;
   from {
     transform: translateX(-100px);
   }
+
   to {
     transform: translateX(0px);
   }
@@ -123,6 +125,7 @@ $bnrw-animation-speed: 2s;
   from {
     transform: translateY(60px);
   }
+
   to {
     transform: translateX(0px);
   }
