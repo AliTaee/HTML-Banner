@@ -33,12 +33,18 @@ const config = [{
   },
   {
     type: "css-property",
+    elId: "bnrw-btn",
+    property: "backgroundColor",
+    data: "#0071e3",
+  },
+  {
+    type: "css-background-image",
     elId: "bnrw-band",
     property: "backgroundImage",
     data: "./images/band.png",
   },
   {
-    type: "css-property",
+    type: "css-background-image",
     elId: "bnrw-watch",
     property: "backgroundImage",
     data: "./images/watch.png",
@@ -59,6 +65,9 @@ function renderElements(element) {
       document.getElementById(elId)[attr] = data;
       break;
     case 'css-property':
+      document.getElementById(elId).style[property] = data;
+      break;
+    case 'css-background-image':
       document.getElementById(elId).style[property] = `url(${data})`;
       break;
 
