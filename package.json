@@ -2,7 +2,7 @@
   "name": "html-banner",
   "version": "1.0.0",
   "description": "HTML banners with focusing on pure CSS and JavaScript.",
-  "main": "src/apple-watch/script.js",
+  "main": "src/apple-watch/js/main-script.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliTaee/html-banner.git"
