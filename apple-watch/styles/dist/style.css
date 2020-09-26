@@ -1,47 +1,47 @@
-.el__ps-ab, .bnrw__el-3, .bnrw__el-2, .bnrw__el-1, .bnrw__el-0 {
+.element__position-absolute, .apwb-banner__element-title, .apwb-banner__element-button, .apwb-banner__element-watch, .apwb-banner__element-band {
   position: absolute;
 }
 
-.bnrw {
+.apwb-banner {
   width: 300px;
   height: 250px;
   background: #212121;
   position: relative;
   overflow: hidden;
 }
-.bnrw__el-0 {
+.apwb-banner__element-band {
   top: 0;
   right: 20px;
 }
-.bnrw__el-1 {
+.apwb-banner__element-watch {
   top: 0;
   right: 0;
 }
-.bnrw__el-2 {
+.apwb-banner__element-button {
   bottom: 15px;
   left: 15px;
 }
-.bnrw__el-3 {
+.apwb-banner__element-title {
   top: 30px;
   left: 15px;
 }
-.bnrw__el-bg {
+.apwb-banner__element-background {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.bnrw__watch {
+.apwb-banner__watch {
   width: 190px;
   height: 250px;
-  animation-name: bnrw-watch;
+  animation-name: apwb-banner-watch;
   animation-duration: 2s;
   animation-timing-function: linear;
 }
-.bnrw__band {
+.apwb-banner__band {
   width: 150px;
   height: 250px;
 }
-.bnrw__btn {
+.apwb-banner__button {
   outline: none;
   width: 75px;
   color: #fff;
@@ -53,11 +53,11 @@
   text-decoration: none;
   letter-spacing: -0.022em;
   text-align: center;
-  animation-name: bnrw-btn;
+  animation-name: apwb-banner-btn;
   animation-duration: 2s;
   animation-timing-function: linear;
 }
-.bnrw__title {
+.apwb-banner__title {
   font-size: 21px;
   color: #fff;
   width: 75px;
@@ -65,15 +65,15 @@
   text-align: center;
   line-height: 1.17648;
   text-transform: capitalize;
-  animation-name: bnrw-title;
+  animation-name: apwb-banner-title;
   animation-duration: 2s;
   animation-timing-function: linear;
 }
-.bnrw__title-red {
+.apwb-banner__title-red-color {
   color: #cd1925;
 }
 
-@keyframes bnrw-watch {
+@keyframes apwb-banner-watch {
   from {
     transform: translateX(200px);
   }
@@ -81,7 +81,7 @@
     transform: translateX(0px);
   }
 }
-@keyframes bnrw-title {
+@keyframes apwb-banner-title {
   from {
     transform: translateX(-100px);
   }
@@ -89,7 +89,7 @@
     transform: translateX(0px);
   }
 }
-@keyframes bnrw-btn {
+@keyframes apwb-banner-btn {
   from {
     transform: translateY(60px);
   }

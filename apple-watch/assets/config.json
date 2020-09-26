@@ -1,0 +1,51 @@
+{
+    "data": [{
+            "type": "dom-attr",
+            "elId": "apwb-banner-brand",
+            "attr": "innerHTML",
+            "data": "apple watch"
+        },
+        {
+            "type": "dom-attr",
+            "elId": "apwb-banner-model",
+            "attr": "innerHTML",
+            "data": "series 6"
+        },
+        {
+            "type": "dom-attr",
+            "elId": "apwb-banner-button",
+            "attr": "href",
+            "data": "https://www.apple.com/watch/"
+        },
+        {
+            "type": "dom-attr",
+            "elId": "apwb-banner-button",
+            "attr": "innerHTML",
+            "data": "buy!"
+        },
+        {
+            "type": "dom-attr",
+            "elId": "apwb-banner-button",
+            "attr": "target",
+            "data": "_blank"
+        },
+        {
+            "type": "css-property",
+            "elId": "apwb-banner-button",
+            "property": "backgroundColor",
+            "data": "#0071e3"
+        },
+        {
+            "type": "css-background-image",
+            "elId": "apwb-banner-band",
+            "property": "backgroundImage",
+            "data": "./images/band.png"
+        },
+        {
+            "type": "css-background-image",
+            "elId": "apwb-banner-watch",
+            "property": "backgroundImage",
+            "data": "./images/watch.png"
+        }
+    ]
+}

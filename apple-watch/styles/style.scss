@@ -7,42 +7,42 @@ $bnrw-btn-bg: #0071e3;
 $bnrw-main-bg: #212121;
 $bnrw-animation-speed: 2s;
 
-.el__ps-ab {
+.element__position-absolute {
   position: absolute;
 }
 
-.bnrw {
+.apwb-banner {
   width: $bnrw-width;
   height: $bnrw-height;
   background: $bnrw-main-bg;
   position: relative;
   overflow: hidden;
 
-  &__el-0 {
-    @extend .el__ps-ab;
+  &__element-band {
+    @extend .element__position-absolute;
     top: 0;
     right: 20px;
   }
 
-  &__el-1 {
-    @extend .el__ps-ab;
+  &__element-watch {
+    @extend .element__position-absolute;
     top: 0;
     right: 0;
   }
 
-  &__el-2 {
-    @extend .el__ps-ab;
+  &__element-button {
+    @extend .element__position-absolute;
     bottom: 15px;
     left: 15px;
   }
 
-  &__el-3 {
-    @extend .el__ps-ab;
+  &__element-title {
+    @extend .element__position-absolute;
     top: 30px;
     left: 15px;
   }
 
-  &__el-bg {
+  &__element-background {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,7 +51,7 @@ $bnrw-animation-speed: 2s;
   &__watch {
     width: 190px;
     height: 250px;
-    animation-name: bnrw-watch;
+    animation-name: apwb-banner-watch;
     animation-duration: $bnrw-animation-speed;
     animation-timing-function: linear;
   }
@@ -61,7 +61,7 @@ $bnrw-animation-speed: 2s;
     height: 250px;
   }
 
-  &__btn {
+  &__button {
     outline: none;
     width: 75px;
     color: $bnrw-white;
@@ -74,7 +74,7 @@ $bnrw-animation-speed: 2s;
     letter-spacing: -0.022em;
     text-align: center;
 
-    animation-name: bnrw-btn;
+    animation-name: apwb-banner-btn;
     animation-duration: $bnrw-animation-speed;
     animation-timing-function: linear;
   }
@@ -88,18 +88,18 @@ $bnrw-animation-speed: 2s;
     line-height: 1.17648;
     text-transform: capitalize;
 
-    animation-name: bnrw-title;
+    animation-name: apwb-banner-title;
     animation-duration: $bnrw-animation-speed;
     animation-timing-function: linear;
 
-    &-red {
+    &-red-color {
       color: $bnrw-red;
     }
   }
 }
 
 // Animations
-@keyframes bnrw-watch {
+@keyframes apwb-banner-watch {
   from {
     transform: translateX(200px);
   }
@@ -109,7 +109,7 @@ $bnrw-animation-speed: 2s;
   }
 }
 
-@keyframes bnrw-title {
+@keyframes apwb-banner-title {
   from {
     transform: translateX(-100px);
   }
@@ -119,7 +119,7 @@ $bnrw-animation-speed: 2s;
   }
 }
 
-@keyframes bnrw-btn {
+@keyframes apwb-banner-btn {
   from {
     transform: translateY(60px);
   }
