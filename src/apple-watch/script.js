@@ -9,7 +9,7 @@ function loadJSON(callback) {
   let xobj = new XMLHttpRequest();
 
   xobj.overrideMimeType("application/json");
-  xobj.open("GET", "http://localhost:1234/config.json", true);
+  xobj.open("GET", "http://localhost:9000/config.json", true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
@@ -21,13 +21,7 @@ function loadJSON(callback) {
 
 // Base on element type it will changes DOM or CSS style
 function renderElements(element) {
-  const {
-    type,
-    data,
-    attr,
-    elId,
-    property
-  } = element;
+  const { type, data, attr, elId, property } = element;
 
   switch (type) {
     case "dom-attr":

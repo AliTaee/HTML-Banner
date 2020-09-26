@@ -14,7 +14,7 @@
     "JavaScript"
   ],
   "scripts": {
-    "dev": "parcel src/apple-watch/index.html",
+    "dev": "parcel src/apple-watch/index.html --port 9000",
     "build": "parcel build src/apple-watch/index.html"
   },
   "author": "Ali Taee",
