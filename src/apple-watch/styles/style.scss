@@ -7,7 +7,7 @@ $bnrw-btn-bg: #0071e3;
 $bnrw-main-bg: #212121;
 $bnrw-animation-speed: 2s;
 
-.element__position-absolute {
+.element-position-absolute {
   position: absolute;
 }
 
@@ -19,30 +19,30 @@ $bnrw-animation-speed: 2s;
   overflow: hidden;
 
   &__element-band {
-    @extend .element__position-absolute;
+    @extend .element-position-absolute;
     top: 0;
     right: 20px;
   }
 
   &__element-watch {
-    @extend .element__position-absolute;
+    @extend .element-position-absolute;
     top: 0;
     right: 0;
   }
 
   &__element-button {
-    @extend .element__position-absolute;
+    @extend .element-position-absolute;
     bottom: 15px;
     left: 15px;
   }
 
   &__element-title {
-    @extend .element__position-absolute;
+    @extend .element-position-absolute;
     top: 30px;
     left: 15px;
   }
 
-  &__element-background {
+  &__element-background-img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
