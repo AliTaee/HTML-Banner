@@ -1,0 +1,26 @@
+// Color and size
+$rmwk-width: 300px;
+$rmwk-height: 250px;
+$rmwk-white: #fff;
+$rmwk-btn-bg: #0071e3;
+$rmwk-main-bg: #212121;
+$rmwk-animation-speed: 2s;
+
+.rmwk-element-position-absolute {
+  position: absolute;
+}
+
+.rmwk-banner {
+  width: $rmwk-width;
+  height: $rmwk-height;
+  background: $rmwk-main-bg;
+  position: relative;
+  overflow: hidden;
+
+  &__background-img {
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    background-image: url("../assets/images/remote-work.jpg");
+  }
+}
