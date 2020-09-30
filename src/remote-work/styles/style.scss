@@ -2,12 +2,13 @@
 $rmwk-width: 300px;
 $rmwk-height: 250px;
 $rmwk-white: #fff;
-$rmwk-btn-bg: #0071e3;
+$rmwk-green: #1dd3b0;
 $rmwk-main-bg: #212121;
 $rmwk-animation-speed: 2s;
 
 .rmwk-element-position-absolute {
   position: absolute;
+  z-index: 2;
 }
 
 .rmwk-banner {
@@ -16,11 +17,72 @@ $rmwk-animation-speed: 2s;
   background: $rmwk-main-bg;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 
   &__background-img {
     background-repeat: no-repeat;
     background-position: inherit;
     background-size: cover;
     background-image: url("../assets/images/remote-work.jpg");
+  }
+
+  &__title {
+    @extend .rmwk-element-position-absolute;
+    color: $rmwk-white;
+    top: 25px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 28px;
+    width: 240px;
+  }
+
+  &__description {
+    @extend .rmwk-element-position-absolute;
+    color: $rmwk-green;
+    bottom: 25px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__button {
+    @extend .rmwk-element-position-absolute;
+    background-color: $rmwk-green;
+    bottom: 15px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transform: rotate(45deg) translateX(-1px) translateY(1px);
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(67, 97, 238, 0.6);
+  }
+
+  &:hover:after {
+    background-color: rgba(67, 97, 238, 0.66);
   }
 }
