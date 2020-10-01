@@ -34,6 +34,9 @@ $rmwk-animation-speed: 2s;
     font-weight: 600;
     font-size: 28px;
     width: 240px;
+
+    animation: 1s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s 1 normal both running
+      rmwk-banner-title;
   }
 
   &__description {
@@ -84,5 +87,14 @@ $rmwk-animation-speed: 2s;
 
   &:hover:after {
     background-color: rgba(67, 97, 238, 0.66);
+  }
+}
+
+@keyframes rmwk-banner-title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
