@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "type": "dom-attr",
+      "elId": "rmwk-banner-title",
+      "attr": "innerHTML",
+      "data": "Work from anywhere. Go remote, go full-time."
+    },
+    {
+      "type": "dom-attr",
+      "elId": "rmwk-banner-description",
+      "attr": "innerHTML",
+      "data": "Get a Job!"
+    },
+    {
+      "type": "dom-attr",
+      "elId": "rmwk-banner-button",
+      "attr": "href",
+      "data": "https://www.turing.com/"
+    },
+    {
+      "type": "dom-attr",
+      "elId": "rmwk-banner-button",
+      "attr": "target",
+      "data": "_blank"
+    },
+    {
+      "type": "css-background-image",
+      "elId": "rmwk-banner",
+      "property": "backgroundImage",
+      "data": "./images/remote-work.jpg"
+    }
+  ]
+}

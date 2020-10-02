@@ -23,7 +23,6 @@ $rmwk-animation-speed: 2s;
     background-repeat: no-repeat;
     background-position: inherit;
     background-size: cover;
-    background-image: url("../assets/images/remote-work.jpg");
   }
 
   &__title {
@@ -48,7 +47,7 @@ $rmwk-animation-speed: 2s;
     font-size: 24px;
 
     animation: 1s cubic-bezier(0.25, 0.1, 0.25, 1) 1s 1 normal both running
-    rmwk-banner-description;
+      rmwk-banner-description;
   }
 
   &__button {
