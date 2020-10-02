@@ -15,11 +15,13 @@ these lines on package.json to banner folder name
 ### Apple watch
 
 banner folder name: apple-watch
+
 ![Apple watch banner](./doc/images/apple-watch.png)
 
 ### Remote work
 
 banner folder name: remote-work
+
 ![Remote work banner](./doc/images/remote-work.png)
 
 ## Build Setup
