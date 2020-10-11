@@ -2,7 +2,7 @@
   "name": "html-banner",
   "version": "1.0.0",
   "description": "HTML banners with focusing on pure CSS and JavaScript.",
-  "main": "src/remote-work/js/main-script.js",
+  "main": "src/apple-watch/js/main-script.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliTaee/html-banner.git"
@@ -14,8 +14,8 @@
     "JavaScript"
   ],
   "scripts": {
-    "dev": "parcel src/remote-work/index.html --port 9000",
-    "build": "parcel build src/remote-work/index.html"
+    "dev": "parcel src/apple-watch/index.html --port 9000",
+    "build": "parcel build src/apple-watch/index.html"
   },
   "author": "Ali Taee",
   "license": "ISC",
@@ -27,5 +27,5 @@
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-asset-copier": "^1.1.0"
   },
-  "assetsPath": "src/remote-work/assets"
+  "assetsPath": "src/apple-watch/assets"
 }

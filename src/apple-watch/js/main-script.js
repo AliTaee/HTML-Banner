@@ -21,17 +21,17 @@ function loadJSON(callback) {
 
 // Base on element type it will changes DOM or CSS style
 function renderElements(element) {
-  const { type, data, attr, elId, property } = element;
+  const { type, data, attribute, elementId, property } = element;
 
   switch (type) {
-    case "dom-attr":
-      document.getElementById(elId)[attr] = data;
+    case "dom-attribute":
+      document.getElementById(elementId)[attribute] = data;
       break;
     case "css-property":
-      document.getElementById(elId).style[property] = data;
+      document.getElementById(elementId).style[property] = data;
       break;
     case "css-background-image":
-      document.getElementById(elId).style[property] = `url(${data})`;
+      document.getElementById(elementId).style[property] = `url(${data})`;
       break;
 
     default:

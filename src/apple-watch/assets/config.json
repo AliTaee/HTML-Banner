@@ -1,49 +1,49 @@
 {
     "data": [{
-            "type": "dom-attr",
-            "elId": "apwb-banner-brand",
-            "attr": "innerHTML",
+            "type": "dom-attribute",
+            "elementId": "apwb-banner-brand",
+            "attribute": "innerHTML",
             "data": "apple watch"
         },
         {
-            "type": "dom-attr",
-            "elId": "apwb-banner-model",
-            "attr": "innerHTML",
+            "type": "dom-attribute",
+            "elementId": "apwb-banner-model",
+            "attribute": "innerHTML",
             "data": "series 6"
         },
         {
-            "type": "dom-attr",
-            "elId": "apwb-banner-button",
-            "attr": "href",
+            "type": "dom-attribute",
+            "elementId": "apwb-banner-button",
+            "attribute": "href",
             "data": "https://www.apple.com/watch/"
         },
         {
-            "type": "dom-attr",
-            "elId": "apwb-banner-button",
-            "attr": "innerHTML",
+            "type": "dom-attribute",
+            "elementId": "apwb-banner-button",
+            "attribute": "innerHTML",
             "data": "buy!"
         },
         {
-            "type": "dom-attr",
-            "elId": "apwb-banner-button",
-            "attr": "target",
+            "type": "dom-attribute",
+            "elementId": "apwb-banner-button",
+            "attribute": "target",
             "data": "_blank"
         },
         {
             "type": "css-property",
-            "elId": "apwb-banner-button",
+            "elementId": "apwb-banner-button",
             "property": "backgroundColor",
             "data": "#0071e3"
         },
         {
             "type": "css-background-image",
-            "elId": "apwb-banner-band",
+            "elementId": "apwb-banner-band",
             "property": "backgroundImage",
             "data": "./images/band.png"
         },
         {
             "type": "css-background-image",
-            "elId": "apwb-banner-watch",
+            "elementId": "apwb-banner-watch",
             "property": "backgroundImage",
             "data": "./images/watch.png"
         }
