@@ -1,10 +1,4 @@
-// Color and size
-$rmwk-width: 300px;
-$rmwk-height: 250px;
-$rmwk-white: #fff;
-$rmwk-green: #1dd3b0;
-$rmwk-main-bg: #212121;
-$rmwk-animation-speed: 2s;
+@import './var.scss';
 
 .rmwk-element-position-absolute {
   position: absolute;
@@ -14,7 +8,7 @@ $rmwk-animation-speed: 2s;
 .rmwk-banner {
   width: $rmwk-width;
   height: $rmwk-height;
-  background: $rmwk-main-bg;
+  background: $rmwk-main-background;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -66,18 +60,19 @@ $rmwk-animation-speed: 2s;
       rmwk-banner-button;
 
     &:after {
-      content: "";
+      content: '';
       display: block;
       width: 15px;
       height: 15px;
-      border-top: 3px solid #fff;
-      border-right: 3px solid #fff;
+      border-top: 3px solid $rmwk-white;
+      border-right: 3px solid $rmwk-white;
+      // It can be easy than this!
       transform: rotate(45deg) translateX(-1px) translateY(1px);
     }
   }
 
   &:after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 100%;
@@ -87,11 +82,11 @@ $rmwk-animation-speed: 2s;
     right: 0;
     left: 0;
     top: 0;
-    background-color: rgba(67, 97, 238, 0.6);
+    background-color: $rmwk-transparent-background-color;
   }
 
   &:hover:after {
-    background-color: rgba(67, 97, 238, 0.66);
+    background-color: $rmwk-transparent-background-color-hover;
   }
 }
 
