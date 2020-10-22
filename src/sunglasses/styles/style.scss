@@ -1,0 +1,16 @@
+@import "./var.scss";
+
+.sngl-element-position-absolute {
+  position: absolute;
+  z-index: 2;
+}
+
+.sngl-banner {
+  width: $sngl-width;
+  height: $sngl-height;
+  background: $sngl-main-bg;
+  color: $sngl-white;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
