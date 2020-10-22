@@ -2,7 +2,7 @@
   "name": "html-banner",
   "version": "1.0.0",
   "description": "HTML banners with focusing on pure CSS and JavaScript.",
-  "main": "src/sunglasses/js/main-script.js",
+  "main": "src/remote-work/js/main-script.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AliTaee/html-banner.git"
@@ -14,8 +14,8 @@
     "JavaScript"
   ],
   "scripts": {
-    "dev": "parcel src/sunglasses/index.html --port 9000",
-    "build": "parcel build src/sunglasses/index.html"
+    "dev": "parcel src/remote-work/index.html --port 9000",
+    "build": "parcel build src/remote-work/index.html"
   },
   "author": "Ali Taee",
   "license": "ISC",
@@ -29,7 +29,8 @@
     "eslint-plugin-prettier": "^3.1.4",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-asset-copier": "^1.1.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "sass": "^1.27.0"
   },
-  "assetsPath": "src/sunglasses/assets"
+  "assetsPath": "src/remote-work/assets"
 }
