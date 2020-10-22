@@ -1,55 +1,31 @@
-"use strict";
+'use strict'
 
 // We can defined config to easily customize HTML banner
-let config = [];
+import configJson from '../assets/config.json'
 
-// Read config data as json file, like img address,
-// title, button color and href ...
-function loadJSON(callback) {
-  let xobj = new XMLHttpRequest();
-
-  xobj.overrideMimeType("application/json");
-  xobj.open("GET", "http://localhost:9000/config.json", true);
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      callback(xobj.responseText);
-    }
-  };
-
-  xobj.send(null);
-}
+// We can defined config to easily customize HTML banner
+let configBannerData = configJson.data
 
 // Base on element type it will changes DOM or CSS style
-function renderElements(element) {
-  const { type, data, attribute, elementId, property } = element;
+function renderElements(domElement) {
+  const { type, data, attribute, elementId, property } = domElement
 
   switch (type) {
-    case "dom-attribute":
-      document.getElementById(elementId)[attribute] = data;
-      break;
-    case "css-property":
-      document.getElementById(elementId).style[property] = data;
-      break;
-    case "css-background-image":
-      document.getElementById(elementId).style[property] = `url(${data})`;
-      break;
+    case 'dom-attribute':
+      document.getElementById(elementId)[attribute] = data
+      break
+    case 'css-property':
+      document.getElementById(elementId).style[property] = data
+      break
+    case 'css-background-image':
+      document.getElementById(elementId).style[property] = `url(${data})`
+      break
 
     default:
-      throw console.error("Please set element type in config banner");
+      throw console.error('Please set element type in config banner')
   }
 }
 
-const readDataFromJson = new Promise((resolve) => {
-  loadJSON(function (response) {
-    resolve(JSON.parse(response));
-  });
-});
-
-readDataFromJson
-  .then((result) => {
-    // Attach config to DOM
-    result.data.forEach((element) => {
-      renderElements(element);
-    });
-  })
-  .catch((error) => console.error(error));
+configBannerData.forEach((domElement) => {
+  renderElements(domElement)
+})
