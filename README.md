@@ -19,7 +19,7 @@ There are no CSS or JS libraries used for this project. However these tools have
 - [Parcel.js](https://parceljs.org/) as the application bundler
 - Eslint as the linter
 - Prettier as the code formatter
-- Sass as the css preprocessor
+- [Sass](https://sass-lang.com/) as the css preprocessor
 
 ## List of Banners
 
